@@ -1,0 +1,47 @@
+{
+  "name": "app-vibe-chat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App de chat y conferencias en línea en tiempo real con websocket, creada con node js, react, express  y tailwind.css",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "16.14.1"
+  },
+  "scripts": {
+    "build": "npm run build --workspace=app",
+    "start": "npm run start --workspace=api",
+    "build:dev": "npm run dev --workspace=app",
+    "start:dev": "npm run dev --workspace=api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JACL613/App-Vibe-Chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JACL613/App-Vibe-Chat/issues"
+  },
+  "homepage": "https://github.com/JACL613/App-Vibe-Chat#readme",
+  "dependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "env": {
+      "jest": true,
+      "cypress/globals": true
+    },
+    "plugins": [
+      "cypress"
+    ]
+  }
+}
