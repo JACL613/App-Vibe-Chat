@@ -43,5 +43,8 @@
     "plugins": [
       "cypress"
     ]
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
   }
 }

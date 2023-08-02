@@ -118,7 +118,7 @@ function App() {
     <>
       <h1>Chat Vibe</h1>
       <img src="" alt="Directo" id='lienzo' />
-      <ul>
+      <ul className=''>
         {
           messages.length >= 2
           ? messages.map((item, i) => {
@@ -135,7 +135,7 @@ function App() {
       </form>
 
       <div className="">
-        <div id='status'></div>
+        <div className="" id='status'></div>
         <video src="" id="video" autoPlay={true} ></video>
         <canvas id='preview' style={{display:'none'}}></canvas>
         <button id='btn-streaming' onClick={handleStreaming}>Transmitir</button>
